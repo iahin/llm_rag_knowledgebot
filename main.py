@@ -1,15 +1,15 @@
 from langchain_ollama.llms import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
-from vector import retriever
+from vector_csv import retriever
 
-model = OllamaLLM(model="llama3.2", temperature=0.7)
+model = OllamaLLM(model="llama3.2")
 
 template = """
 You are an expert in answering question about a pizza restaurent.
 
 Here are some relevant reviews: {reviews}
 
-here is the question ti answer: {question}
+here is the question to answer: {question}
 
 """
 

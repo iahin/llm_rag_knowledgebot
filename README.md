@@ -120,3 +120,13 @@ The next meeting for Project Alpha is scheduled for 2026-05-13, and there are 37
 - For large datasets, building/updating the vectorstore may take significant time.
 
 
+## FAQ
+
+1. When querying for rating 1, it returns rating 5
+2. 
+I don't think feeding raw CSV data to an LLM is a good use of resources. LLMs and RAG are not great at raw data analytics and it will cost a ton in tokens.
+
+I think a better strategy would be to dump Excel data into Sqlite3 and instruct the LLM to run SQL queries on that database.
+
+3. Langchain query not retunring all the sources of the queries, eg, asking for rating 1, returns only one source even though there are multiple rows with rating 1.
+
