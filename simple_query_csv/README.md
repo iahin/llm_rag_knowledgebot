@@ -7,9 +7,9 @@ This project demonstrates how to build a fully local AI agent using Python, leve
 - LangChain for orchestrating retrieval & generation workflows
 - A vector store + retrieval-augmented generation (RAG) architecture to ground responses in your own documents
 
-With this setup, you’ll be able to load your local data (text, CSV, PDFs, etc.), embed it, store it in a vector database, then ask questions and have the system retrieve relevant chunks and generate answers.
+With this setup, you’ll be able to load your local CSV data , embed it, store it in a vector database, then ask questions and have the system retrieve relevant chunks and generate answers.
 
-For simple query only, does not include filtering, sql injection, chunking etc.
+For simple query only, does not include filtering, sql injection, chunking etc, different data type.
 
 ## Features
 

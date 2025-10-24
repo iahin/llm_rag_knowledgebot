@@ -1,0 +1,371 @@
+[
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "OllamaLLM",
+        "importPath": "langchain_ollama",
+        "description": "langchain_ollama",
+        "isExtraImport": true,
+        "detail": "langchain_ollama",
+        "documentation": {}
+    },
+    {
+        "label": "OllamaLLM",
+        "importPath": "langchain_ollama",
+        "description": "langchain_ollama",
+        "isExtraImport": true,
+        "detail": "langchain_ollama",
+        "documentation": {}
+    },
+    {
+        "label": "ChatOllama",
+        "importPath": "langchain_ollama",
+        "description": "langchain_ollama",
+        "isExtraImport": true,
+        "detail": "langchain_ollama",
+        "documentation": {}
+    },
+    {
+        "label": "Chroma",
+        "importPath": "langchain_chroma",
+        "description": "langchain_chroma",
+        "isExtraImport": true,
+        "detail": "langchain_chroma",
+        "documentation": {}
+    },
+    {
+        "label": "Document",
+        "importPath": "langchain_core.documents",
+        "description": "langchain_core.documents",
+        "isExtraImport": true,
+        "detail": "langchain_core.documents",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "ChatPromptTemplate",
+        "importPath": "langchain_core.prompts",
+        "description": "langchain_core.prompts",
+        "isExtraImport": true,
+        "detail": "langchain_core.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "sqlite3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sqlite3",
+        "description": "sqlite3",
+        "detail": "sqlite3",
+        "documentation": {}
+    },
+    {
+        "label": "TypedDict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing_extensions",
+        "description": "typing_extensions",
+        "isExtraImport": true,
+        "detail": "typing_extensions",
+        "documentation": {}
+    },
+    {
+        "label": "TypedDict",
+        "importPath": "typing_extensions",
+        "description": "typing_extensions",
+        "isExtraImport": true,
+        "detail": "typing_extensions",
+        "documentation": {}
+    },
+    {
+        "label": "query_prompt_template",
+        "importPath": "Prompt",
+        "description": "Prompt",
+        "isExtraImport": true,
+        "detail": "Prompt",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "importPath": "Typedicts",
+        "description": "Typedicts",
+        "isExtraImport": true,
+        "detail": "Typedicts",
+        "documentation": {}
+    },
+    {
+        "label": "SQLDatabase",
+        "importPath": "langchain_community.utilities",
+        "description": "langchain_community.utilities",
+        "isExtraImport": true,
+        "detail": "langchain_community.utilities",
+        "documentation": {}
+    },
+    {
+        "label": "QuerySQLDatabaseTool",
+        "importPath": "langchain_community.tools.sql_database.tool",
+        "description": "langchain_community.tools.sql_database.tool",
+        "isExtraImport": true,
+        "detail": "langchain_community.tools.sql_database.tool",
+        "documentation": {}
+    },
+    {
+        "label": "START",
+        "importPath": "langgraph.graph",
+        "description": "langgraph.graph",
+        "isExtraImport": true,
+        "detail": "langgraph.graph",
+        "documentation": {}
+    },
+    {
+        "label": "StateGraph",
+        "importPath": "langgraph.graph",
+        "description": "langgraph.graph",
+        "isExtraImport": true,
+        "detail": "langgraph.graph",
+        "documentation": {}
+    },
+    {
+        "label": "MemorySaver",
+        "importPath": "langgraph.checkpoint.memory",
+        "description": "langgraph.checkpoint.memory",
+        "isExtraImport": true,
+        "detail": "langgraph.checkpoint.memory",
+        "documentation": {}
+    },
+    {
+        "label": "system_message",
+        "kind": 5,
+        "importPath": "Prompt",
+        "description": "Prompt",
+        "peekOfCode": "system_message = \"\"\"\nGiven an input question, create a syntactically correct {dialect} query to\nrun to help find the answer. Unless the user specifies in his question a\nspecific number of examples they wish to obtain, always limit your query to\nat most {top_k} results. You can order the results by a relevant column to\nreturn the most interesting examples in the database.\nNever query for all the columns from a specific table, only ask for a the\nfew relevant columns given the question.\nPay attention to use only the column names that you can see in the schema\ndescription. Be careful to not query for columns that do not exist. Also,",
+        "detail": "Prompt",
+        "documentation": {}
+    },
+    {
+        "label": "user_prompt",
+        "kind": 5,
+        "importPath": "Prompt",
+        "description": "Prompt",
+        "peekOfCode": "user_prompt = \"Question: {input}\"\nquery_prompt_template = ChatPromptTemplate(\n    [(\"system\", system_message), (\"user\", user_prompt)]\n)\n# for message in query_prompt_template.messages:\n#     message.pretty_print()",
+        "detail": "Prompt",
+        "documentation": {}
+    },
+    {
+        "label": "query_prompt_template",
+        "kind": 5,
+        "importPath": "Prompt",
+        "description": "Prompt",
+        "peekOfCode": "query_prompt_template = ChatPromptTemplate(\n    [(\"system\", system_message), (\"user\", user_prompt)]\n)\n# for message in query_prompt_template.messages:\n#     message.pretty_print()",
+        "detail": "Prompt",
+        "documentation": {}
+    },
+    {
+        "label": "QueryOutput",
+        "kind": 6,
+        "importPath": "Query",
+        "description": "Query",
+        "peekOfCode": "class QueryOutput(TypedDict):\n    \"\"\"Generated SQL query.\"\"\"\n    query: Annotated[str, ..., \"Syntactically valid SQL query.\"]\ndef write_query(state: State):\n    \"\"\"Generate SQL query to fetch information.\"\"\"\n    prompt = query_prompt_template.invoke(\n        {\n            \"dialect\": db.dialect,\n            \"top_k\": 10,\n            \"table_info\": db.get_table_info(),",
+        "detail": "Query",
+        "documentation": {}
+    },
+    {
+        "label": "write_query",
+        "kind": 2,
+        "importPath": "Query",
+        "description": "Query",
+        "peekOfCode": "def write_query(state: State):\n    \"\"\"Generate SQL query to fetch information.\"\"\"\n    prompt = query_prompt_template.invoke(\n        {\n            \"dialect\": db.dialect,\n            \"top_k\": 10,\n            \"table_info\": db.get_table_info(),\n            \"input\": state[\"question\"],\n        }\n    )",
+        "detail": "Query",
+        "documentation": {}
+    },
+    {
+        "label": "execute_query",
+        "kind": 2,
+        "importPath": "Query",
+        "description": "Query",
+        "peekOfCode": "def execute_query(state: State):\n    \"\"\"Execute SQL query.\"\"\"\n    execute_query_tool = QuerySQLDatabaseTool(db=db)\n    return {\"result\": execute_query_tool.invoke(state[\"query\"])}\ndef generate_answer(state: State):\n    \"\"\"Answer question using retrieved information as context.\"\"\"\n    prompt = (\n        \"Given the following user question, corresponding SQL query, \"\n        \"and SQL result, answer the user question.\\n\\n\"\n        f\"Question: {state['question']}\\n\"",
+        "detail": "Query",
+        "documentation": {}
+    },
+    {
+        "label": "generate_answer",
+        "kind": 2,
+        "importPath": "Query",
+        "description": "Query",
+        "peekOfCode": "def generate_answer(state: State):\n    \"\"\"Answer question using retrieved information as context.\"\"\"\n    prompt = (\n        \"Given the following user question, corresponding SQL query, \"\n        \"and SQL result, answer the user question.\\n\\n\"\n        f\"Question: {state['question']}\\n\"\n        f\"SQL Query: {state['query']}\\n\"\n        f\"SQL Result: {state['result']}\"\n    )\n    response = llm.invoke(prompt)",
+        "detail": "Query",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "Query",
+        "description": "Query",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent\nCSV_PATH = BASE_DIR / \"data\" / \"realistic_restaurant_reviews.csv\"\nDB_NAME = \"my_database.db\"\nDB_DIR = BASE_DIR / DB_NAME\ncsv_file = CSV_PATH\ndf = pd.read_csv(csv_file)\nconn = sqlite3.connect(DB_DIR)\ntable_name = \"my_table\"\ndf.to_sql(table_name, conn, if_exists=\"replace\", index=False)\ndb = SQLDatabase.from_uri(\"sqlite:///\"+DB_NAME)",
+        "detail": "Query",
+        "documentation": {}
+    },
+    {
+        "label": "CSV_PATH",
+        "kind": 5,
+        "importPath": "Query",
+        "description": "Query",
+        "peekOfCode": "CSV_PATH = BASE_DIR / \"data\" / \"realistic_restaurant_reviews.csv\"\nDB_NAME = \"my_database.db\"\nDB_DIR = BASE_DIR / DB_NAME\ncsv_file = CSV_PATH\ndf = pd.read_csv(csv_file)\nconn = sqlite3.connect(DB_DIR)\ntable_name = \"my_table\"\ndf.to_sql(table_name, conn, if_exists=\"replace\", index=False)\ndb = SQLDatabase.from_uri(\"sqlite:///\"+DB_NAME)\nllm = ChatOllama(model=\"llama3.2\", temperature=0)",
+        "detail": "Query",
+        "documentation": {}
+    },
+    {
+        "label": "DB_NAME",
+        "kind": 5,
+        "importPath": "Query",
+        "description": "Query",
+        "peekOfCode": "DB_NAME = \"my_database.db\"\nDB_DIR = BASE_DIR / DB_NAME\ncsv_file = CSV_PATH\ndf = pd.read_csv(csv_file)\nconn = sqlite3.connect(DB_DIR)\ntable_name = \"my_table\"\ndf.to_sql(table_name, conn, if_exists=\"replace\", index=False)\ndb = SQLDatabase.from_uri(\"sqlite:///\"+DB_NAME)\nllm = ChatOllama(model=\"llama3.2\", temperature=0)\nclass QueryOutput(TypedDict):",
+        "detail": "Query",
+        "documentation": {}
+    },
+    {
+        "label": "DB_DIR",
+        "kind": 5,
+        "importPath": "Query",
+        "description": "Query",
+        "peekOfCode": "DB_DIR = BASE_DIR / DB_NAME\ncsv_file = CSV_PATH\ndf = pd.read_csv(csv_file)\nconn = sqlite3.connect(DB_DIR)\ntable_name = \"my_table\"\ndf.to_sql(table_name, conn, if_exists=\"replace\", index=False)\ndb = SQLDatabase.from_uri(\"sqlite:///\"+DB_NAME)\nllm = ChatOllama(model=\"llama3.2\", temperature=0)\nclass QueryOutput(TypedDict):\n    \"\"\"Generated SQL query.\"\"\"",
+        "detail": "Query",
+        "documentation": {}
+    },
+    {
+        "label": "csv_file",
+        "kind": 5,
+        "importPath": "Query",
+        "description": "Query",
+        "peekOfCode": "csv_file = CSV_PATH\ndf = pd.read_csv(csv_file)\nconn = sqlite3.connect(DB_DIR)\ntable_name = \"my_table\"\ndf.to_sql(table_name, conn, if_exists=\"replace\", index=False)\ndb = SQLDatabase.from_uri(\"sqlite:///\"+DB_NAME)\nllm = ChatOllama(model=\"llama3.2\", temperature=0)\nclass QueryOutput(TypedDict):\n    \"\"\"Generated SQL query.\"\"\"\n    query: Annotated[str, ..., \"Syntactically valid SQL query.\"]",
+        "detail": "Query",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Query",
+        "description": "Query",
+        "peekOfCode": "df = pd.read_csv(csv_file)\nconn = sqlite3.connect(DB_DIR)\ntable_name = \"my_table\"\ndf.to_sql(table_name, conn, if_exists=\"replace\", index=False)\ndb = SQLDatabase.from_uri(\"sqlite:///\"+DB_NAME)\nllm = ChatOllama(model=\"llama3.2\", temperature=0)\nclass QueryOutput(TypedDict):\n    \"\"\"Generated SQL query.\"\"\"\n    query: Annotated[str, ..., \"Syntactically valid SQL query.\"]\ndef write_query(state: State):",
+        "detail": "Query",
+        "documentation": {}
+    },
+    {
+        "label": "conn",
+        "kind": 5,
+        "importPath": "Query",
+        "description": "Query",
+        "peekOfCode": "conn = sqlite3.connect(DB_DIR)\ntable_name = \"my_table\"\ndf.to_sql(table_name, conn, if_exists=\"replace\", index=False)\ndb = SQLDatabase.from_uri(\"sqlite:///\"+DB_NAME)\nllm = ChatOllama(model=\"llama3.2\", temperature=0)\nclass QueryOutput(TypedDict):\n    \"\"\"Generated SQL query.\"\"\"\n    query: Annotated[str, ..., \"Syntactically valid SQL query.\"]\ndef write_query(state: State):\n    \"\"\"Generate SQL query to fetch information.\"\"\"",
+        "detail": "Query",
+        "documentation": {}
+    },
+    {
+        "label": "table_name",
+        "kind": 5,
+        "importPath": "Query",
+        "description": "Query",
+        "peekOfCode": "table_name = \"my_table\"\ndf.to_sql(table_name, conn, if_exists=\"replace\", index=False)\ndb = SQLDatabase.from_uri(\"sqlite:///\"+DB_NAME)\nllm = ChatOllama(model=\"llama3.2\", temperature=0)\nclass QueryOutput(TypedDict):\n    \"\"\"Generated SQL query.\"\"\"\n    query: Annotated[str, ..., \"Syntactically valid SQL query.\"]\ndef write_query(state: State):\n    \"\"\"Generate SQL query to fetch information.\"\"\"\n    prompt = query_prompt_template.invoke(",
+        "detail": "Query",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "Query",
+        "description": "Query",
+        "peekOfCode": "db = SQLDatabase.from_uri(\"sqlite:///\"+DB_NAME)\nllm = ChatOllama(model=\"llama3.2\", temperature=0)\nclass QueryOutput(TypedDict):\n    \"\"\"Generated SQL query.\"\"\"\n    query: Annotated[str, ..., \"Syntactically valid SQL query.\"]\ndef write_query(state: State):\n    \"\"\"Generate SQL query to fetch information.\"\"\"\n    prompt = query_prompt_template.invoke(\n        {\n            \"dialect\": db.dialect,",
+        "detail": "Query",
+        "documentation": {}
+    },
+    {
+        "label": "llm",
+        "kind": 5,
+        "importPath": "Query",
+        "description": "Query",
+        "peekOfCode": "llm = ChatOllama(model=\"llama3.2\", temperature=0)\nclass QueryOutput(TypedDict):\n    \"\"\"Generated SQL query.\"\"\"\n    query: Annotated[str, ..., \"Syntactically valid SQL query.\"]\ndef write_query(state: State):\n    \"\"\"Generate SQL query to fetch information.\"\"\"\n    prompt = query_prompt_template.invoke(\n        {\n            \"dialect\": db.dialect,\n            \"top_k\": 10,",
+        "detail": "Query",
+        "documentation": {}
+    },
+    {
+        "label": "graph_builder",
+        "kind": 5,
+        "importPath": "Query",
+        "description": "Query",
+        "peekOfCode": "graph_builder = StateGraph(State).add_sequence(\n    [write_query, execute_query, generate_answer]\n)\ngraph_builder.add_edge(START, \"write_query\")\nmemory = MemorySaver()\ngraph = graph_builder.compile(\n    checkpointer=memory, interrupt_before=[\"execute_query\"])\n# Now that we're using persistence, we need to specify a thread ID\n# so that we can continue the run after review.\nconfig = {\"configurable\": {\"thread_id\": \"1\"}}",
+        "detail": "Query",
+        "documentation": {}
+    },
+    {
+        "label": "memory",
+        "kind": 5,
+        "importPath": "Query",
+        "description": "Query",
+        "peekOfCode": "memory = MemorySaver()\ngraph = graph_builder.compile(\n    checkpointer=memory, interrupt_before=[\"execute_query\"])\n# Now that we're using persistence, we need to specify a thread ID\n# so that we can continue the run after review.\nconfig = {\"configurable\": {\"thread_id\": \"1\"}}\nfor step in graph.stream(\n    {\"question\": \"How many unique range of ratings are there? with no limit\"},\n    config,\n    stream_mode=\"updates\",",
+        "detail": "Query",
+        "documentation": {}
+    },
+    {
+        "label": "graph",
+        "kind": 5,
+        "importPath": "Query",
+        "description": "Query",
+        "peekOfCode": "graph = graph_builder.compile(\n    checkpointer=memory, interrupt_before=[\"execute_query\"])\n# Now that we're using persistence, we need to specify a thread ID\n# so that we can continue the run after review.\nconfig = {\"configurable\": {\"thread_id\": \"1\"}}\nfor step in graph.stream(\n    {\"question\": \"How many unique range of ratings are there? with no limit\"},\n    config,\n    stream_mode=\"updates\",\n):",
+        "detail": "Query",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "kind": 5,
+        "importPath": "Query",
+        "description": "Query",
+        "peekOfCode": "config = {\"configurable\": {\"thread_id\": \"1\"}}\nfor step in graph.stream(\n    {\"question\": \"How many unique range of ratings are there? with no limit\"},\n    config,\n    stream_mode=\"updates\",\n):\n    print(step)\ntry:\n    user_approval = input(\"Do you want to go to execute query? (yes/no): \")\nexcept Exception:",
+        "detail": "Query",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "kind": 6,
+        "importPath": "Typedicts",
+        "description": "Typedicts",
+        "peekOfCode": "class State(TypedDict):\n    question: str\n    query: str\n    result: str\n    answer: str",
+        "detail": "Typedicts",
+        "documentation": {}
+    }
+]
