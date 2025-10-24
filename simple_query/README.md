@@ -1,4 +1,5 @@
-# llm_rag_knowledgebot
+# RAG Knowledge Bot - Simple Query Only
+
 Overview
 
 This project demonstrates how to build a fully local AI agent using Python, leveraging:
@@ -7,6 +8,8 @@ This project demonstrates how to build a fully local AI agent using Python, leve
 - A vector store + retrieval-augmented generation (RAG) architecture to ground responses in your own documents
 
 With this setup, you’ll be able to load your local data (text, CSV, PDFs, etc.), embed it, store it in a vector database, then ask questions and have the system retrieve relevant chunks and generate answers.
+
+For simple query only, does not include filtering, sql injection, chunking etc.
 
 ## Features
 
@@ -122,11 +125,11 @@ The next meeting for Project Alpha is scheduled for 2026-05-13, and there are 37
 
 ## FAQ
 
-1. When querying for rating 1, it returns rating 5
-2. 
-I don't think feeding raw CSV data to an LLM is a good use of resources. LLMs and RAG are not great at raw data analytics and it will cost a ton in tokens.
+Feeding raw CSV data to an LLM is a good use of resources. LLMs and RAG are not great at raw data analytics and it will cost a ton in tokens. Better strategy would be to dump Excel data into Sqlite3 and instruct the LLM to run SQL queries on that database.
 
-I think a better strategy would be to dump Excel data into Sqlite3 and instruct the LLM to run SQL queries on that database.
+1. 1. When querying for rating 1, it returns rating 5 or Langchain query not retunring all the sources of the queries, eg, asking for rating 1, returns only one source even though there are multiple rows with rating 1.
+   - Langchain is a simlarity text retreival, not filtering. The filtering have to be done seperately before chaining to the LLM. Can use manually filter at vector or use SelfQueryRetriever that interprets the user’s question to infer the appropriate filter.
 
-3. Langchain query not retunring all the sources of the queries, eg, asking for rating 1, returns only one source even though there are multiple rows with rating 1.
 
+# Reference
+1. https://python.langchain.com/docs/tutorials/sql_qa/

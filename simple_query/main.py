@@ -1,8 +1,8 @@
 from langchain_ollama.llms import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
-from vector_csv import retriever
+from vector import retriever
 
-model = OllamaLLM(model="llama3.2")
+model = OllamaLLM(model="llama3.2", temperature=0)
 
 template = """
 You are an expert in answering question about a pizza restaurent.
@@ -26,6 +26,7 @@ while True:
         break
     
     reviews = retriever.invoke(question)
+    
     result = chain.invoke({
         "reviews": reviews, 
         "question": question})

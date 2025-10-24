@@ -1,8 +1,0 @@
-langchain
-langchain-ollama
-langchain-chroma
-langchain-openai
-openai
-pandas
-langchain-text-splitters
-langchain-community
